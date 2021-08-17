@@ -1,0 +1,1433 @@
+/* _________________________________________ ANIMATION BOX (rainy, AR) */
+.rainy-animation {
+  position: relative;
+  margin: auto;
+  animation: move1 4s infinite alternate;
+  display: block;
+}
+
+@keyframes move1 {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+
+/* ANIMATION DESIGN */
+.cloud1 {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cloud1::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  right: 35px;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* RAIN DROPS */
+.drop {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to bottom left, #80d4ff, #b5e3d7);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid #edf8f5;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.drop1 {
+  top: 85px;
+  left: 45px;
+  animation: raining1 1.4s infinite;
+}
+
+@keyframes raining1 {
+  0% {
+    opacity: 0;
+    top: 85px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 120px;
+  }
+}
+
+.drop2 {
+  top: 110px;
+  left: 115px;
+  animation: raining2 1.5s infinite;
+}
+
+@keyframes raining2 {
+  0% {
+    opacity: 0;
+    top: 110px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 150px;
+  }
+}
+
+.drop3 {
+  top: 85px;
+  right: 60px;
+  animation: raining3 1.5s infinite;
+}
+
+@keyframes raining3 {
+  0% {
+    opacity: 0;
+    top: 85px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 120px;
+  }
+}
+
+/* 2ND CLOUD */
+.cloud1-a {
+  position: relative;
+  width: 135px;
+  height: 45px;
+  border-radius: 100px;
+  top: -30px;
+  right: -100px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move1-a 8s infinite;
+}
+
+@keyframes move1-a {
+  0% {
+    opacity: 0;
+    right: -100px;
+  }
+
+  25% {
+    opacity: 100%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    right: -190px;
+  }
+}
+
+.cloud1-a::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  top: -40px;
+  right: 13px;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1-a::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  top: -25px;
+  left: 25px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+} /* _______________________________ END - ANIMATION BOX (rainy, AR) */
+
+
+
+
+
+/* ___________________________________________ ANIMATION BOX (cloudy, OR) */
+.cloudy-animation {
+  position: relative;
+  margin: auto;
+  top: 20%;
+  animation: move2 5s infinite alternate;
+  display: none;
+}
+
+@keyframes move2 {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+
+/* ANIMATION DESIGN */
+.cloud2 {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move2-a 3s infinite;
+}
+
+@keyframes move2-a {
+  0% {
+    opacity: 80%;
+  }
+
+  30% {
+    opacity: 100%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 80%;
+  }
+}
+
+.cloud2::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  right: 35px;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.17) inset;
+}
+
+.cloud2::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* 2ND CLOUD */
+.cloud2-a {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  top: -50px;
+  left: -50px;
+  background-color: #fafafa;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move2-b 6.5s infinite;
+}
+
+@keyframes move2-b {
+  0% {
+    opacity: 0;
+    left: -50px;
+  }
+
+  30% {
+    opacity: 85%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    left: -110px;
+  }
+}
+
+.cloud2-a::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  left: 35px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud2-a::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  right: 50px;
+  background-color: #fafafa;
+  border-top: 1px solid rgba(217, 217, 217, 0.6);
+}
+
+/* 3RD CLOUD */
+.cloud2-b {
+  position: relative;
+  width: 135px;
+  height: 45px;
+  border-radius: 100px;
+  top: -100px;
+  left: 120px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move2-c 7s infinite;
+}
+
+@keyframes move2-c {
+  0% {
+    opacity: 0;
+    left: 120px;
+  }
+
+  45% {
+    opacity: 100%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    left: 200px;
+  }
+}
+
+.cloud2-b::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  top: -40px;
+  right: 13px;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+.cloud2-b::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  top: -25px;
+  left: 25px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+} /* ________________________________________ END - ANIMATION BOX (cloudy, OR) */
+
+
+
+
+
+/* _________________________________________ ANIMATION BOX (sunny, TM / BV) */
+.sunny-animation {
+  position: relative;
+  margin: auto;
+  top: 12%;
+  right: -3%;
+  display: none;
+}
+
+.sunny2-animation {
+  position: relative;
+  margin: auto;
+  top: 12%;
+  right: -3%;
+  display: none;
+}
+
+/* ANIMATION DESIGN */
+.sun1 {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top left, #ffd11a, #ffff80 90%);
+  box-shadow: 0 0 35px 10px #ffff4d;
+  animation: move3 3s infinite alternate;
+}
+
+@keyframes move3 {
+  0% {
+    box-shadow: 0 0 35px 10px #ffff4d;
+  }
+
+  100% {
+    box-shadow: 0 0 40px 20px #ffff4d;
+  }
+}
+
+.cloud3 {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  top: -60px;
+  left: -20px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move3-a 11s infinite alternate;
+  z-index: 999999;
+}
+
+@keyframes move3-a {
+  0% {
+    left: -20px;
+  }
+
+  40% {
+    left: 20px;
+  }
+
+  100% {
+    left: -35px;
+  }
+}
+
+.cloud3::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  right: 35px;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud3::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* 2D CLOUD */
+.cloud3-a {
+  position: relative;
+  width: 135px;
+  height: 45px;
+  border-radius: 100px;
+  top: -135px;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move3-b 10s infinite;
+  z-index: 1;
+}
+
+@keyframes move3-b {
+  0% {
+    opacity: 0;
+    right: 10px;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  75% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    right: 110px;
+  }
+}
+
+.cloud3-a::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  top: -40px;
+  right: 13px;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud3-a::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  top: -25px;
+  left: 25px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+} /* ______________________________________ END - ANIMATION BOX (sunny, TM / BV) */
+
+
+
+
+
+/* _________________________________________ ANIMATION BOX (storm, CJ) */
+.storm-animation {
+  position: relative;
+  margin: auto;
+  top: 25%;
+  right: -15%;
+  animation: move1 4s infinite alternate;
+  display: none;
+}
+
+@keyframes move1 {
+  0% {
+    right: -7%;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+/* ANIMATION DESIGN */
+.cloud1 {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cloud1::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  right: 35px;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* RAIN DROPS */
+.drop {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to bottom left, #80d4ff, #b5e3d7);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid #edf8f5;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.drop1 {
+  top: 85px;
+  left: 45px;
+  animation: raining1 1.4s infinite;
+}
+
+@keyframes raining1 {
+  0% {
+    opacity: 0;
+    top: 85px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 120px;
+  }
+}
+
+.drop2 {
+  top: 110px;
+  left: 115px;
+  animation: raining2 1.5s infinite;
+}
+
+@keyframes raining2 {
+  0% {
+    opacity: 0;
+    top: 110px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 150px;
+  }
+}
+
+.drop3 {
+  top: 85px;
+  right: 60px;
+  animation: raining3 1.5s infinite;
+}
+
+@keyframes raining3 {
+  0% {
+    opacity: 0;
+    top: 85px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 120px;
+  }
+}
+
+/* 2nd CLOUD */
+.cloud1-aa {
+  position: relative;
+  width: 135px;
+  height: 45px;
+  border-radius: 100px;
+  top: -30px;
+  right: -100px;
+  background-color: #fafafa;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move1-a 5s infinite;
+}
+
+@keyframes move1-a {
+  0% {
+    opacity: 0;
+    right: -100px;
+  }
+
+  25% {
+    opacity: 100%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    right: -190px;
+  }
+}
+
+.cloud1-aa::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  top: -40px;
+  right: 13px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1-aa::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  top: -25px;
+  left: 25px;
+  background-color: #fafafa;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* 3rd CLOUD */
+.cloud1-b {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  top: -150px;
+  right: 30px;
+  z-index: -999999;
+  animation: move1-b 5s infinite alternate;
+}
+
+@keyframes move1-b {
+  0% {
+    right: 30px;
+    opacity: 80%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    right: 110px;
+    opacity: 80%;
+  }
+}
+
+.cloud1-b::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  left: 35px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1-b::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  right: 50px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* 4th CLOUD */
+.cloud1-c {
+  position: relative;
+  width: 230px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: #e6e6e6;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  top: -200px;
+  left: -20px;
+  z-index: -1;
+  animation: move1-c 5.5s infinite;
+}
+
+@keyframes move1-c {
+  0% {
+    opacity: 0;
+    top: -200px;
+    left: -20px;
+  }
+
+  45% {
+    opacity: 90%;
+  }
+
+  60% {
+    opacity: 90%;
+  }
+
+  100% {
+    opacity: 0;
+    top: -170px;
+    left: -140px;
+  }
+}
+
+.cloud1-c::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -65px;
+  right: 28px;
+  background-color: #e6e6e6;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1-c::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: -40px;
+  left: 40px;
+  background-color: #e6e6e6;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* LIGHTENING 1 */
+.bolt1 {
+  position: relative;
+  width: 70px;
+  height: 95px;
+  top: 95px;
+  left: 137px;
+  z-index: -1;
+  animation: light1 3s infinite;
+}
+
+@keyframes light1 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  28% {
+    opacity: 80%;
+  }
+
+  32% {
+    opacity: 0;
+  }
+
+  38% {
+    opacity: 100%;
+  }
+
+  42% {
+    opacity: 100%;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* LIGHTENING 2 */
+.bolt2 {
+  position: relative;
+  width: 55px;
+  height: 80px;
+  top: 95px;
+  left: 137px;
+  top: 90px;
+  left: 70px;
+  z-index: -999999;
+  animation: light2 3s infinite;
+}
+
+@keyframes light2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  53% {
+    opacity: 60%;
+  }
+
+  55% {
+    opacity: 0;
+  }
+
+  58% {
+    opacity: 75%;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+/* _______________________________ END - ANIMATION BOX (storm, CJ) */
+
+
+
+
+
+/* _________________________________________ ANIMATION BOX (sleet, IS) */
+.sleet-animation {
+  position: relative;
+  margin: auto;
+  top: 15%;
+  right: -15%;
+  animation: move1 4s infinite alternate;
+  display: none;
+}
+
+@keyframes move1 {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+
+/* ANIMATION DESIGN */
+.cloud1 {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cloud1::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  right: 35px;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* RAIN DROPS */
+.drop {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(to bottom left, #80d4ff, #b5e3d7);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid #edf8f5;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.drop1 {
+  top: 85px;
+  left: 45px;
+  animation: raining1 1.4s infinite;
+}
+
+@keyframes raining1 {
+  0% {
+    opacity: 0;
+    top: 85px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 120px;
+  }
+}
+
+.drop2 {
+  top: 110px;
+  left: 115px;
+  animation: raining2 1.5s infinite;
+}
+
+@keyframes raining2 {
+  0% {
+    opacity: 0;
+    top: 110px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 150px;
+  }
+}
+
+.drop3 {
+  top: 85px;
+  right: 60px;
+  animation: raining3 1.5s infinite;
+}
+
+@keyframes raining3 {
+  0% {
+    opacity: 0;
+    top: 85px;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  20% {
+    opacity: 35%;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 120px;
+  }
+}
+
+/* 2ND CLOUD */
+.cloud1-aaa {
+  position: relative;
+  width: 135px;
+  height: 45px;
+  border-radius: 100px;
+  top: -30px;
+  right: -50px;
+  background-color: #f1f1f1;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  animation: move1-aaa 9.5s infinite;
+}
+
+@keyframes move1-aaa {
+  0% {
+    opacity: 0;
+    right: -50px;
+  }
+
+  25% {
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    right: 100px;
+  }
+}
+
+.cloud1-aaa::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  top: -40px;
+  right: 13px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1-aaa::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  top: -25px;
+  left: 25px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* 3rd CLOUD */
+.cloud1-b {
+  position: relative;
+  width: 300px;
+  height: 85px;
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1) inset,
+    0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  top: -150px;
+  right: 30px;
+  z-index: -999999;
+  animation: move1-b 5s infinite alternate;
+}
+
+@keyframes move1-b {
+  0% {
+    right: 30px;
+    opacity: 80%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    right: 110px;
+    opacity: 80%;
+  }
+}
+
+.cloud1-b::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  top: -85px;
+  left: 35px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cloud1-b::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: -50px;
+  right: 50px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* SNOW PIEES */
+.snow {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: radial-gradient(#eaeaea, #f1f1f1);
+  box-shadow: 0 0 10px 3px white;
+}
+
+.snow1 {
+  top: 84px;
+  left: 170px;
+  animation: snow1 2.5s infinite;
+}
+
+@keyframes snow1 {
+  0% {
+    opacity: 0%;
+    top: 84px;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 135px;
+  }
+}
+
+.snow2 {
+  top: 105px;
+  left: 105px;
+  animation: snow2 3s infinite;
+}
+
+@keyframes snow2 {
+  0% {
+    opacity: 0%;
+    top: 105px;
+  }
+
+  40% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 150px;
+  }
+}
+
+.snow3 {
+  top: 85px;
+  left: 110px;
+  animation: snow3 2.5s infinite;
+}
+
+@keyframes snow3 {
+  0% {
+    opacity: 0%;
+    top: 85px;
+  }
+
+  35% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 130px;
+  }
+} /* _______________________________ END - ANIMATION BOX (sleet, IS) */
+
+
+
+
+
+/* _________________________________________ ANIMATION BOX (clear, SB / CT) */
+.clear-animation {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+.clear2-animation {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+
+.sun2 {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top left, #ffdb4d, #ffff80 90%);
+  box-shadow: 0 0 35px 10px #ffff4d;
+  animation: move5 3s infinite alternate;
+}
+
+@keyframes move5 {
+  0% {
+    box-shadow: 0 0 35px 10px #ffff4d;
+  }
+
+  100% {
+    box-shadow: 0 0 45px 20px #ffff4d;
+  }
+} /* _________________________________________ END - ANIMATION BOX (clear, SB / CT) */
+
+
+
+
+
+/* _________________________________________ ANIMATION BOX (clear3, BUC) */
+.clear3-animation {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+
+.sun2 {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top left, #ffdb4d, #ffff80 90%);
+  box-shadow: 0 0 35px 10px #ffff4d;
+  animation: move5 3s infinite alternate;
+} /* _________________________________________ END - ANIMATION BOX (clear2, BUC) */

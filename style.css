@@ -1,0 +1,572 @@
+/* _________________________________________________________________ RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+input:hover,
+input:active,
+input:focus,
+textarea,
+textarea:hover,
+textarea:active,
+textarea:focus,
+select,
+select:hover,
+select:active,
+select:focus {
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  list-style: none;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+::placeholder {
+  color: #b3b3b3;
+}
+
+::-webkit-search-cancel-button {
+  display: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+} /* ______________________________________________________________ END RESET */
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(to top right, #6596f6, #56dfc9);
+}
+
+
+
+/*_______________________________________________________________ BACKGROUND DESIGN */
+
+/* BLURED CIRCLES DESIGN */
+.design1 {
+  background: linear-gradient(to top left, #297fd9, #56dfc9);
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: 6%;
+  left: 3%;
+  filter: blur(25px);
+}
+
+.design2 {
+  background: linear-gradient(to top right, #297fd9, #56dfc9 70%);
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  top: 1%;
+  right: 18%;
+  filter: blur(20px);
+}
+
+.design3 {
+  background: linear-gradient(to top left, #297fd9, #56dfc9 70%);
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: 50%;
+  right: 11%;
+  filter: blur(20px);
+}
+
+.design4 {
+  background: linear-gradient(to bottom right, #3c8add, #297fd9, #56dfc9 70%);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 67%;
+  right: 60%;
+  filter: blur(20px);
+}
+
+.design5 {
+  background: linear-gradient(to bottom left, #3c8add, #297fd9, #56dfc9 70%);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  top: 27%;
+  right: 55%;
+  filter: blur(35px);
+}
+
+/* CIRCLES DESIGN */
+.circle1,
+.circle2 {
+  background-image: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  filter: blur(5px);
+}
+
+.circle1 {
+  bottom: 4%;
+  left: 10%;
+  filter: blur(7px);
+}
+
+.circle2 {
+  top: 5%;
+  right: 10%;
+}
+
+/* ***************************************************************************************************** */
+
+/* ____________________________ MAIN CONTENT */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 1075px;
+  height: 85%;
+  max-height: 640px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+  border-left: 2px solid rgba(255, 255, 255, 1);
+  backdrop-filter: blur(20px);
+}
+
+/* ______________________________ LEFT SIDE */
+.left {
+  width: 25%;
+  max-width: 270px;
+  height: 100%;
+  border-radius: 20px;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.left-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* CITY NAME */
+.city {
+  font-size: 32px;
+  color: #568ec6;
+  opacity: 0.8;
+}
+
+/* DATE & TIME */
+.date {
+  margin-bottom: 10px;
+  color: #568ec6;
+  opacity: 0.8;
+}
+
+.date span:first-child {
+  margin-right: 5px;
+}
+
+.date span {
+  font-size: 18px;
+}
+
+/* CITY IMAGE */
+.left-header img {
+  width: 170px;
+  height: 116px;
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+/* DEGREES */
+.degrees {
+  font-size: 50px;
+  color: #568ec6;
+  opacity: 0.8;
+}
+
+/* _____________________________ INFORMATIONS */
+.left-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.info:not(.info:nth-child(5)) {
+  margin-bottom: 5px;
+}
+
+.info span {
+  font-size: 18px;
+  color: #568ec6;
+}
+
+.info span:first-child {
+  margin-right: 7px;
+}
+
+.info span:nth-child(2) {
+  color: #568ec6;
+  opacity: 0.7;
+}
+
+/*_____________________________________ SEARCH */
+.search-box {
+  position: relative;
+}
+
+.search {
+  width: 170px;
+  padding: 8px 12px 8px 32px;
+  border-radius: 10px;
+  color: #808080;
+}
+
+.fa-search {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  color: #cccccc;
+}
+
+
+
+
+
+/*_________________________________ RIGHT SIDE */
+.right {
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 3% 3% 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* _______________________________ HEADER LOGO */
+.right-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-header-mobile {
+  display: none;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 8.5%;
+  margin-right: 15px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
+.logo-box span {
+  font-size: 55px;
+  color: white;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ____________________________________ MENU BUTTON */
+.menu-box {
+  position: relative;
+}
+
+.menu-box .fa {
+  font-size: 20px;
+  padding: 8px;
+  color: #568ec6;
+  opacity: 0.7;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+  border-left: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.menu-box .fa:hover {
+  color: #b3cce6;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: unset;
+  border-left: unset;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.menu-box .fa:active {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ____________________________ METEO ANIMATION SIDE */
+.right-box {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 8%;
+}
+
+/*  ________ ANIMATION BOX  ________ */
+/*  ______________ in ______________ */
+/*  ________ ANIMATIONS.CSS ________ */
+
+/* __________________ RIGHT FOOTER - WEATHER BY HOURS */
+.right-footer {
+  width: 100%;
+  margin-top: 12%;
+}
+
+.today {
+  display: inline-block;
+  margin-left: 3px;
+  margin-bottom: 5px;
+  color: #568ec6;
+}
+
+.line {
+  background-color: #f6f8fa;
+  height: 1px;
+  width: 100%;
+  border-radius: 100px;
+  margin-bottom: 5px;
+}
+
+.time-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HOUR CARD */
+.card {
+  width: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.card span {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #568ec6;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 20px;
+  color: #568ec6;
+}
+
+/* ***************************************************************************************************** */
+
+
+
+/*____________________________________________________ MENU PAGE */
+
+/*______________________________ LEFT SIDE */
+.left2 {
+  color: #568ec6;
+  opacity: 0.8;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact h2 {
+  opacity: 0.7;
+}
+
+/* FACEBOOK */
+.contact a {
+  width: 33px;
+  height: 33px;
+  border-radius: 5px;
+  color: #568ec6;
+  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contact .fa {
+  font-size: 20px;
+  position: relative;
+  top: 6px;
+  left: 9px;
+}
+
+.contact a:hover {
+  color: rgba(58, 81, 125, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.01);
+  border-left: 1px solid rgba(255, 255, 255, 0.01);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08) inset;
+}
+
+.left-header2 span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+/* DOWNLOAD */
+button {
+  width: 100%;
+  padding: 7px;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: rgba(58, 81, 125, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button:hover {
+  color: rgba(58, 81, 125, 0.4);
+  border-top: 2px solid rgba(255, 255, 255, 0.01);
+  border-left: 2px solid rgba(255, 255, 255, 0.01);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ABOUT */
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about span {
+  text-align: justify;
+}
+
+/* COPYRIGHT */
+.copyright span:first-child {
+  display: block;
+  margin-bottom: 3px;
+}
+
+
+
+/*______________________________ RIGHT SIDE */
+.right-header2 {
+  display: none;
+}
+
+.logo-box .span {
+  font-size: 38px;
+}
+
+/* COOKIES */
+.right-box2 {
+  height: 76%;
+  display: block;
+  align-items: unset;
+  overflow-y: auto;
+  color: rgba(58, 81, 125, 0.7);
+}
+
+.right-box2 h3 {
+  margin-bottom: 3%;
+}
